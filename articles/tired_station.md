@@ -3,7 +3,7 @@ title: "beautyspot2.3.1のリリース"
 emoji: "😺"
 type: "tech"
 topics: [Python, beautyspot]
-published: false
+published: true
 ---
 
 # beautyspot v2.3.1 をリリースしました
