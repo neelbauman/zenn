@@ -1,6 +1,7 @@
 from openai import OpenAI
 from pydantic import BaseModel
 from beautyspot import Spot, KeyGen
+from beautyspot.serializer import MsgpackSerializer
 
 spot = Spot("myproject", default_version="v0.1.1")
 
@@ -10,19 +11,24 @@ class User(BaseModel):
     last_name: str
     email: str
 
-
-@spot.register(
-    code=10,
-    encoder=lambda x: x.model_dump(),
-    decoder=lambda x: UserList.model_validate(x),
-)
 class UserList(BaseModel):
     users: list[User]
 
 
-@spot.mark(keygen=KeyGen.map(
-    client=KeyGen.IGNORE,
-))
+serializer = MsgpackSerializer()
+serializer.register(
+    code=10,
+    type_=UserList,
+    encoder=lambda x: x.model_dump(),
+    decoder=lambda x: UserList.model_validate(x),
+)
+
+@spot.mark(
+    keygen=KeyGen.map(
+        client=KeyGen.IGNORE,
+    ),
+    serializer=serializer,
+)
 def get_test_users(client: OpenAI, n: int) -> UserList:
     completion = client.beta.chat.completions.parse(
         model="gpt-4o-2024-08-06",

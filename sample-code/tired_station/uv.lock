@@ -64,14 +64,14 @@ wheels = [
 
 [[package]]
 name = "beautyspot"
-version = "2.3.2"
+version = "2.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "msgpack" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/c5/25a9ffc5762fa78309f1e8fcfa352606906f30d6d575e586b2a7ae49294a/beautyspot-2.3.2.tar.gz", hash = "sha256:ead4b0377365895f023e9107262c1a0d43d61e05d32b8dd224600e352e68ff33", size = 1022351, upload-time = "2026-02-14T11:35:10.96Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/22/6590338576ab654737152e592e30797b78cf738a637e94320cb1550fce11/beautyspot-2.4.0.tar.gz", hash = "sha256:d6847f2c19b897305e52c3451b229d0234318e7987b59831038a7ae86dfb0f43", size = 1024062, upload-time = "2026-02-14T12:42:39.494Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/56/87/b7186933bdaf5e04781f4e364cabead75f9b3001a0b08bbc44545214aa18/beautyspot-2.3.2-py3-none-any.whl", hash = "sha256:66dd9a3f00bbb3423d6733c9b0a607243d9116062cf2b0f9dcd104643c181271", size = 37546, upload-time = "2026-02-14T11:35:13.343Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/63/af372345173ae9017038b7c7556ad0a3384459806a8040272ade83e20976/beautyspot-2.4.0-py3-none-any.whl", hash = "sha256:814bb311d5276ab6dbf68aec70e845a7f5c0a6a00eae4cefc1966498ddad7882", size = 37614, upload-time = "2026-02-14T12:42:22.813Z" },
 ]
 
 [package.optional-dependencies]
@@ -818,7 +818,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "beautyspot", extras = ["dashboard"], specifier = "==2.3.2" },
+    { name = "beautyspot", extras = ["dashboard"], specifier = "==2.4.0" },
     { name = "openai", specifier = ">=2.21.0" },
     { name = "pydantic", specifier = ">=2.12.5" },
 ]
