@@ -1,12 +1,12 @@
 ---
-title: "beautyspot v2.4.0 のリリース"
+title: "beautyspot v2.4.1 のリリース"
 emoji: "😺"
 type: "tech"
 topics: [Python, beautyspot]
-published: false
+published: true
 ---
 
-# beautyspot v2.4.0 をリリースしました
+# beautyspot v2.4.1 をリリースしました
 
 - [github](https://github.com/neelbauman/beautyspot)
 - [公式ドキュメント](https://neelbauman.github.io/beautyspot/)
