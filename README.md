@@ -23,7 +23,7 @@ mkdir -p articles/images
 ### ステップ1: 記事の新規作成
 
 1. `<leader>e` で **Neo-tree** を開きます。
-2. `articles` ディレクトリを選択し、**`A`** キーを叩きます。
+2. `articles` ディレクトリを選択し、**`A`** キーを叩きます。 or  npx zenn new:article でファイルを初期化する。
 3. カスタムスクリプト `randomfilename.lua` が起動し、Zennの仕様に最適なランダムなファイル名（スラッグ）が自動入力されます。
 
 ### ステップ2: Front Matter の挿入
